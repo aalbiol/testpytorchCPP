@@ -1,0 +1,180 @@
+$ cmake ~/rasp4/mscan_dnn/testpytorch/
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda (found suitable exact version "12.1") 
+-- Found OpenCV: /usr/local (found version "4.7.0") 
+-- Found CUDA: /usr/local/cuda (found version "12.1") 
+-- The CUDA compiler identification is NVIDIA 12.1.105
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Caffe2: CUDA detected: 12.1
+-- Caffe2: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+-- Caffe2: CUDA toolkit directory: /usr/local/cuda
+-- Caffe2: Header version is: 12.1
+-- /usr/local/cuda/lib64/libnvrtc.so shorthash is b51b459d
+-- Found CUDNN: /usr/lib/x86_64-linux-gnu/libcudnn.so  
+-- Autodetected CUDA architecture(s):  8.6
+-- Added CUDA NVCC flags for: -gencode;arch=compute_86,code=sm_86
+-- Found Torch: /opt/libtorch/lib/libtorch.so  
+TORCH_LIBRARIES torchtorch_library/opt/libtorch/lib/libc10.so/opt/libtorch/lib/libkineto.a/usr/lib/x86_64-linux-gnu/libcuda.so/usr/local/cuda/lib64/libnvrtc.so/usr/local/cuda/lib64/libnvToolsExt.so/usr/local/cuda/lib64/libcudart.so/opt/libtorch/lib/libc10_cuda.so
+TORCH_INCLUDE_DIRS /opt/libtorch/include/opt/libtorch/include/torch/csrc/api/include
+TORCH_CXX_FLAGS -D_GLIBCXX_USE_CXX11_ABI=1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aalbiol/tmp/build_testpytorch
+
+
+================================ SALIDA EJECUCION CUDA ========================
+
+$ predictionbatch_RGBNIR_CUDA 
+Usage: prediction 
+Debe existir arandanos.ts y arandano.cimg en la carpeta actual
+arandano.cimg
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 2526184 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 115408 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7545 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7158 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7480 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7403 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7327 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7133 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7277 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  GPU : 7710 usecs  Batch size:8 
+probs:
+0.846 0.195 0.139 0.454 0.965 0.129 0.072 0.034 0.055 0.103 
+
+
+-------------------------------------------------------------------------------
+--------------------------- CPU  ----------------------------------------------
+-------------------------------------------------------------------------------
+
+(base) aalbiol@mel:~/rasp4/mscan_dnn/testpytorch/Arandanos-rundir$ predictionbatch_RGBNIR_CPU
+Usage: prediction 
+Debe existir arandanos.ts y arandano.cimg en la carpeta actual
+arandano.cimg
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 237056 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 164137 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 65849 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 65259 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 64778 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 65438 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 65324 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 66074 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 65742 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103 
+out_tensor:
+dims=2
+sizes=8 10 
+Tiempo  CPU : 65551 usecs  Batch size:8 
+probs:
+0.845 0.195 0.139 0.455 0.965 0.130 0.072 0.034 0.055 0.103
