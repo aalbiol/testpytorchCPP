@@ -226,7 +226,9 @@ int main(int argc, const char* argv[]) {
 
    torch::jit::script::Module model;
    try {
+       std::cerr << "Loading " << model_path << " ...\n";
       model = torch::jit::load(model_path, device);
+      std::cout << "Done\n";
    } catch (const c10::Error& e) {
       std::cerr << "error loading the model " << model_path << "\n";
       return -1;

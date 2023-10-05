@@ -1,0 +1,39 @@
+FP32 TORCHTRT
+
+0.844 0.195 0.139 0.458 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 3658 usecs  Batch size:8
+probs:
+0.844 0.195 0.139 0.458 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 3641 usecs  Batch size:8
+probs:
+0.844 0.195 0.139 0.458 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 3593 usecs  Batch size:8
+probs:
+0.844 0.195 0.139 0.458 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 4277 usecs  Batch size:8
+
+
+
+
+SOLO CUDA
+
+0.847 0.194 0.139 0.454 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 6102 usecs  Batch size:8
+probs:
+0.847 0.194 0.139 0.454 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 6649 usecs  Batch size:8
+probs:
+0.847 0.194 0.139 0.454 0.965 0.130 0.072 0.034 0.055 0.103
+Tiempo  GPU : 6177 usecs  Batch size:8	
+
+
+TORCHTRT FP16
+probs:
+0.845 0.199 0.142 0.459 0.965 0.129 0.072 0.034 0.055 0.103
+Tiempo  GPU : 1756 usecs  Batch size:8
+probs:
+0.845 0.199 0.142 0.459 0.965 0.129 0.072 0.034 0.055 0.103
+Tiempo  GPU : 2180 usecs  Batch size:8
+probs:
+0.845 0.199 0.142 0.459 0.965 0.129 0.072 0.034 0.055 0.103
+Tiempo  GPU : 1789 usecs  Batch size:8
